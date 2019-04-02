@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhap chuoi");
+    let output ="";
+
+    for(let i=0; i<input.length; i++) {
+        if (input.charCodeAt(i) >= 65 && input.charCodeAt(i) <= 90)
+            output += String.fromCharCode(input.charCodeAt(i) + 32);
+        else
+            if (input.charCodeAt(i) >= 97 && input.charCodeAt(i) <= 122)
+                output += String.fromCharCode(input.charCodeAt(i) - 32);
+            else
+                output += " re";
+    }
+    alert(output);
+</script>
+</body>
+</html>
